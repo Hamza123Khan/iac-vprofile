@@ -22,7 +22,7 @@ env:
   AWS_REGION: us-east-1
   EKS_CLUSTER: vprofile-eks
   
-  jobs:
+jobs:
     terraform:
       name: "apply terraform code changes"
       runs-on: ubuntu-latest
@@ -34,7 +34,7 @@ env:
       steps:
         - name: checkout source code
           uses: action/checekout@v4
-          
+
         - name: setup terraform with simplified version on the runnner
           uses: hashicorp/terraform@v2
 
