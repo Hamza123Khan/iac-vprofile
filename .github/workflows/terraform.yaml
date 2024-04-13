@@ -36,7 +36,7 @@ jobs:
           uses: action/checekout@v4
 
         - name: setup terraform with simplified version on the runnner
-          uses: hashicorp/terraform@v2
+          uses: hashicorp/setup-terraform@v2
 
         - name: Terraform init
           id: init
