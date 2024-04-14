@@ -74,7 +74,7 @@ jobs:
             aws-region: ${{ env.AWS_REGION }}
         
         - name: Get kube config file
-          id: get config
+          id: getconfig
           if: steps.apple.outcome == 'success'
           run: aws eks update-kubeconfig --region ${{ env.AWS_REGION }} --name ${{ env.EKS_CLUSTER }}
         
